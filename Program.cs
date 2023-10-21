@@ -8,15 +8,15 @@ int number = Convert.ToInt32(Console.ReadLine());
 int count = 1;
 NaturalToLow(number, count);
 
-void NaturalToLow(int n, int count)
+void NaturalToLow(int N, int count)
 {
-    if (count > n)
+    if (count > N)
     {
         return;
     }
     else
     {
-        NaturalToLow(n, count + 1);
+        NaturalToLow(N, count + 1);
         Console.Write(count + " ");
     }
 }
